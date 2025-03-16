@@ -1,3 +1,4 @@
+# Função gerar valores para lista
 def lista_valores_aleatorio(tamanho_lista):
     from random import randint
 
@@ -8,6 +9,8 @@ def lista_valores_aleatorio(tamanho_lista):
     
     return lista_vazia
 
+
+# Programa Principal
 tamanho = int(input('Tamanho da lista: '))
 valores_lista = lista_valores_aleatorio(tamanho_lista=tamanho)
 print(f'lista gerada: {valores_lista}\n')
