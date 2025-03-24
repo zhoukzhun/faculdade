@@ -1,33 +1,27 @@
-public class Interface {
-    
-    private String opcao1;
-    private String opcao2;
-    private String opcao3;
-    private String opcao4;
-    private String opcao5;
-    private String opcao6;
-    private String opcao7;
+import java.util.List;
 
-    public Interface(String opcao1, String opcao2, String opcao3, String opcao4, String opcao5, String opcao6, String opcao7) {
-        this.opcao1 = opcao1;
-        this.opcao2 = opcao2;
-        this.opcao3 = opcao3;
-        this.opcao4 = opcao4;
-        this.opcao5 = opcao5;
-        this.opcao6 = opcao6;
-        this.opcao7 = opcao7;
+public class Interface {
+
+    // Método exibir menu
+    public void exibirMenu() {
+
+        List<String> listaOpcao = List.of("Cadastrar Corretor", "Cadastrar Cliente", "Cadastrar Imóvel", 
+        "Listar Corretores", "Listar Clientes", "Listar Imóveis", "Sair");
+        
+        System.out.println("- ".repeat(20));
+
+        for (int numOpcao = 0; numOpcao < listaOpcao.size(); numOpcao++) {
+            System.out.println(numOpcao + 1 + " - " + listaOpcao.get(numOpcao));
+        }
+
+        System.out.print("- ".repeat(20) + "\nDigitar Opção>  ");
+        
     }
 
-    public void getmenuGeral() {
-        System.out.println("- ".repeat(20));
-        System.out.println("(1) " + opcao1.toLowerCase());
-        System.out.println("(2) " + opcao2.toLowerCase());
-        System.out.println("(3) " + opcao3.toLowerCase());
-        System.out.println("(4) " + opcao4.toLowerCase());
-        System.out.println("(5) " + opcao5.toLowerCase());
-        System.out.println("(6) " + opcao6.toLowerCase());
-        System.out.println("(7) " + opcao7.toLowerCase());
-        System.out.println("- ".repeat(20));
+    // Método para limpar tela do terminal
+    public void limparTela() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
     }
 
 }
