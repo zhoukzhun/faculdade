@@ -81,7 +81,7 @@ public class Funcionario {
     }
 
     public void setCargoFuncionario(String cargoFuncionario) {
-        if (cargoFuncionario.trim().isEmpty() || cargoFuncionario.length() <= 3) {
+        if (cargoFuncionario.length() <= 3) {
             System.out.println("Preencha um cargo existente, tente novamente!\n");
         } else {
             System.out.println("Cargo do funcionário adicionado com sucesso!\n");

@@ -42,7 +42,7 @@ public class Main {
         
         // Ler nome do funcionário e usar setter para realizar a modificação no valor do atributo
         System.out.print("Nome do funcionário: ");
-        String registrarNomeFuncionario = sc.nextLine();
+        String registrarNomeFuncionario = sc.nextLine().trim();
         sc.nextLine();
         novoFuncionario.setNomeFuncionario(registrarNomeFuncionario);
         
@@ -54,22 +54,22 @@ public class Main {
 
         // Escrever as informações sobre o intervalo de Contrato do funcionário e modificar usando setter
         System.out.print("Tempo de Contrato do Funcionário (texto): ");
-        String registrarTempoContrato = sc.nextLine();
+        String registrarTempoContrato = sc.nextLine().trim();
         novoFuncionario.setTempoContrato(registrarTempoContrato);
 
         // Especificar o cargo do funcionário e modificar com setter
         System.out.print("Cargo do funcionário: ");
-        String registrarCargoFuncionario = sc.nextLine();
+        String registrarCargoFuncionario = sc.nextLine().trim();
         novoFuncionario.setCargoFuncionario(registrarCargoFuncionario);
 
         // Especificar o intervalo de férias (em texto)
         System.out.print("Escreva o intervalo de férias (texto): ");
-        String registrarIntervaloFerias = sc.nextLine();
+        String registrarIntervaloFerias = sc.nextLine().trim();
         novoFuncionario.setIntervaloFerias(registrarIntervaloFerias);
 
         // Colocar a empresa que o funcionário está atuando no momento
         System.out.print("Empresa que o funcionário está registrado atualmente: ");
-        String registrarEmpresaAtual = sc.nextLine();
+        String registrarEmpresaAtual = sc.nextLine().trim();
         novoFuncionario.setEmpresaAtual(registrarEmpresaAtual);
 
         novoFuncionario.exibirFuncionario();
