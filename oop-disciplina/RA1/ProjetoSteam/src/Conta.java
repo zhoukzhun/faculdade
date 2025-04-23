@@ -50,7 +50,6 @@ public class Conta extends Plataforma {
             for (Jogo exibirCadaJogoCarrinho : listaCarrinhoCompra) {
                 System.out.println("Nome do Jogo: " + exibirCadaJogoCarrinho.getNomeJogo().toLowerCase() + "   -->  Preço R$" + exibirCadaJogoCarrinho.getPrecoJogo());
                 totalPrecoCompra += exibirCadaJogoCarrinho.getPrecoJogo();
-
             }
 
             System.out.println("- - ".repeat(10) + "\nTOTAL da Lista de Compra. R$" + totalPrecoCompra);
@@ -104,8 +103,7 @@ public class Conta extends Plataforma {
             for (Jogo exibirCadaListaCompra : listaCarrinhoCompra) {
                 if (exibirCadaListaCompra.getNomeJogo().equals(removerNomeJogoCompra)) {
                     listaCarrinhoCompra.remove(exibirCadaListaCompra);
-                    System.out.println("Jogo removido com Sucesso!");
-                    System.out.println("Retornando ao Menu Principal..");
+                    System.out.println("Jogo removido com Sucesso!\nRetornando ao Menu Principal..");
                     confirmarRemocaoJogo = true;
                     break;
                 }
