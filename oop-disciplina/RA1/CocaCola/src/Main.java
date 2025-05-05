@@ -15,13 +15,13 @@ public class Main {
                     usuarioNovo.exibirInfoUsuario();
                     break;
                 case 2:
-                    System.out.println("1");
+                    usuarioNovo.realizarPedido(sc);
                     break;
                 case 3:
                     usuarioNovo.exibirCatalogo();
                     break;
                 case 4:
-                   usuarioNovo.adicionarRemoverProduto(sc);
+                    usuarioNovo.adicionarRemoverProduto(sc);
                     break;
                 case 5:
                     System.out.println("Saindo do Menu..");
