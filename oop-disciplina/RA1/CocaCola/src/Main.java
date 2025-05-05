@@ -21,7 +21,7 @@ public class Main {
                     usuarioNovo.exibirCatalogo();
                     break;
                 case 4:
-                    System.out.println("1");
+                   usuarioNovo.adicionarRemoverProduto(sc);
                     break;
                 case 5:
                     System.out.println("Saindo do Menu..");
